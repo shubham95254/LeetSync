@@ -10,7 +10,7 @@ public:
         }
         for(int i=0; i<maxfreq; i++){
             for(auto it:mpp) {
-                if(mpp[it.first]>0) ans.push_back(it.first);
+                if(it.second>0) ans.push_back(it.first);
                 mpp[it.first]--;
             }
         }
